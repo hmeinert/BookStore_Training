@@ -1,0 +1,26 @@
+{
+  "id": "c239d64b-1cde-48f2-a75d-22240b072cd5",
+  "name": "BSBBook",
+  "publisher": "MAC BookStore",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://BSBBook.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0"
+  }

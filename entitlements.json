@@ -1,0 +1,36 @@
+﻿{
+  "MembershipEntitlements": [
+    {
+      "Id": "424a21b4-c544-409c-85c7-9b5a928bc713",
+      "SetId": "ALProject1",
+      "EntitlementType": 0
+    }
+  ],
+  "EntitlementSets": [
+    {
+      "SetId": "ALProject1",
+      "Entitlements": [
+        {
+          "ObjectType": 0,
+          "ObjectIdRangeStart": 50100,
+          "ObjectIdRangeEnd": 50100,
+          "Read": 1,
+          "Insert": 1,
+          "Modify": 1,
+          "Delete": 1,
+          "Execute": 0
+        },
+        {
+          "ObjectType": 1,
+          "ObjectIdRangeStart": 50100,
+          "ObjectIdRangeEnd": 50100,
+          "Read": 0,
+          "Insert": 0,
+          "Modify": 0,
+          "Delete": 0,
+          "Execute": 1
+        }
+      ]
+    }
+  ]
+}
