@@ -145,10 +145,8 @@ table 50100 "BSB Book"
     end;
 
     procedure TestBlocked()
-    var
-
     begin
-
+        TestField(Blocked, false);
     end;
 
 }

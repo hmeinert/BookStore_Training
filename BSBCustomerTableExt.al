@@ -10,10 +10,11 @@ tableextension 50100 "BSB Customer" extends Customer
             var
 
             begin
-                if ("BSB Favorite Book No." <> xRec."BSB Favorite Book No.") and ("BSB Favorite Book No." <> '') then begin
-                    BSBBook.get("BSB Favorite Book No.");
-                    if BSBBook.Blocked = true then
-                        Error('IS BLOCKED');
+                if ("BSB Favorite Book No." <> xRec."BSB Favorite Book No.") and
+                   ("BSB Favorite Book No." <> '')
+               then begin
+                    BSBBook.Get("BSB Favorite Book No.");
+                    BSBBook.TestBlocked();
                 end;
 
             end;
