@@ -7,7 +7,7 @@
     "CRS.ObjectNamePrefix": "BSB ",
     "al-xml-doc.CheckProcedureDocumentationInformationLevel": "Disabled",
     "editor.mouseWheelZoom": true,
-    "al.enableCodeAnalysis": false,
+    "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
         "${CodeCop}",
         "${UICop}",

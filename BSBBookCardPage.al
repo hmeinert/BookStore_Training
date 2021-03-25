@@ -11,96 +11,96 @@ page 50100 "BSB Book Card"
         {
             group(General)
             {
-                field("Author Provision %"; Rec."Author Provision %")
-                {
-                    ApplicationArea = All;
-                }
-                field("Date of Publishing"; Rec."Date of Publishing")
-                {
-                    ApplicationArea = All;
-                }
-                field("Edition No."; Rec."Edition No.")
-                {
-                    ApplicationArea = All;
-                }
-                field("Item Description"; Rec."Item Description")
-                {
-                    ApplicationArea = All;
-                }
-                field("Item No."; Rec."Item No.")
-                {
-                    ApplicationArea = All;
-                }
-                field("Last Date Modified"; Rec."Last Date Modified")
-                {
-                    ApplicationArea = All;
-                }
-                field("No. of Pages"; Rec."No. of Pages")
-                {
-                    ApplicationArea = All;
-                }
+                Caption = 'General';
+
                 field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
-                }
-                field("Recom. Sales Price incl. VAT"; Rec."Recom. Sales Price incl. VAT")
-                {
-                    ApplicationArea = All;
-                }
-                field("Sales Price Currency Code"; Rec."Sales Price Currency Code")
-                {
-                    ApplicationArea = All;
-                }
-                field(Author; Rec.Author)
-                {
-                    ApplicationArea = All;
-                }
-                field(Blocked; Rec.Blocked)
-                {
-                    ApplicationArea = All;
-                }
-                field(Created; Rec.Created)
-                {
-                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the No. field';
+
                 }
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Description field';
                 }
-                field(ISBN; Rec.ISBN)
+                field("Search Description"; Rec."Search Description")
                 {
                     ApplicationArea = All;
+                    Importance = Additional;
+                    ToolTip = 'Specifies the value of the Search Description field';
                 }
-                field(SearchDescription; Rec."Search Description")
+                field(Blocked; Rec.Blocked)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Blocked field';
                 }
-                field(SystemCreatedAt; Rec.SystemCreatedAt)
+                field(Author; Rec.Author)
                 {
                     ApplicationArea = All;
-                }
-                field(SystemCreatedBy; Rec.SystemCreatedBy)
-                {
-                    ApplicationArea = All;
-                }
-                field(SystemId; Rec.SystemId)
-                {
-                    ApplicationArea = All;
-                }
-                field(SystemModifiedAt; Rec.SystemModifiedAt)
-                {
-                    ApplicationArea = All;
-                }
-                field(SystemModifiedBy; Rec.SystemModifiedBy)
-                {
-                    ApplicationArea = All;
+                    Importance = Promoted;
+                    ToolTip = 'Specifies the value of the Author field';
                 }
                 field(Type; Rec.Type)
                 {
                     ApplicationArea = All;
+                    Importance = Promoted;
+                    ToolTip = 'Specifies the value of the Type field';
+                }
+                field(ISBN; Rec.ISBN)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the ISBN field';
                 }
             }
+            group(Invoicing)
+            {
+
+                field("Author Provision %"; Rec."Author Provision %")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Author Provision % field';
+                }
+            }
+            group(Publishing)
+            {
+
+                field("Edition No."; Rec."Edition No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Edition No. field';
+                }
+                field("No. of Pages"; Rec."No. of Pages")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the No. of Pages field';
+                }
+                field("Date of Publishing"; Rec."Date of Publishing")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Date of Publishing field';
+                }
+                field("Item No."; Rec."Item No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Item No. field';
+                }
+                field("Item Description"; Rec."Item Description")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Item Description field';
+                }
+            }
+
         }
+        area(FactBoxes)
+        {
+            systempart(Links; Links) { ApplicationArea = All; }
+            systempart(Notes; Notes) { ApplicationArea = All; }
+        }
+
+
+
     }
 
 }

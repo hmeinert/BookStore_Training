@@ -2,6 +2,9 @@ table 50100 "BSB Book"
 {
     Caption = 'BSB Book';
     DataClassification = ToBeClassified;
+    DataCaptionFields = "No.", Description;
+    LookupPageId = "BSB Book List";
+
     fields
     {
         field(1; "No."; Code[20])
@@ -14,6 +17,8 @@ table 50100 "BSB Book"
         {
             Caption = 'Description';
             DataClassification = ToBeClassified;
+
+
 
             trigger OnValidate()
             begin
@@ -110,6 +115,12 @@ table 50100 "BSB Book"
         {
             Clustered = true;
         }
+    }
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Description, ISBN) { }
+
+
     }
     var
         OnDeleteErr: Label '%1 NOT ALLOWED', Comment = '%1 Bemerkung für Platzhalter';

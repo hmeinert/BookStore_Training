@@ -6,6 +6,8 @@ tableextension 50100 "BSB Customer" extends Customer
         {
             Caption = 'BSB Favorite Book No.';
             DataClassification = ToBeClassified;
+            TableRelation = "BSB Book";
+
             trigger OnValidate()
             var
 
@@ -16,7 +18,7 @@ tableextension 50100 "BSB Customer" extends Customer
                     BSBBook.Get("BSB Favorite Book No.");
                     BSBBook.TestBlocked();
                 end;
-
+                CalcFields("BSB Favorite Book Description");
             end;
         }
         field(50101; "BSB Favorite Book Description"; Text[100])
