@@ -36,11 +36,18 @@ page 50101 "BSB Book List"
                     ToolTip = 'Specifies the value of the ISBN field';
                 }
             }
+
         }
         area(Factboxes)
         {
             systempart(Links; Links) { ApplicationArea = All; }
             systempart(Notes; Notes) { ApplicationArea = All; }
         }
+
     }
+    actions
+    {
+    }
+
+
 }
